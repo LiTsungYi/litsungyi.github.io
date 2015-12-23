@@ -31,4 +31,4 @@ experienceBranch.commit( maxonText );
 var maxonJobBranch = experienceBranch.branch( maxonBranchText );
 maxonJobBranch.commit( vegaProjText ).commit( galileeProjText ).commit( ichibanProjText );
 maxonJobBranch.merge( experienceBranch );
-educationBranch.commit( "." );
+educationBranch.commit( "改變成真" );

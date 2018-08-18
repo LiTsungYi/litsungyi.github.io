@@ -573,8 +573,13 @@
 	.project
 	{
 		margin: 10px;
-		width: 250px;
-		height: 200px;
+		width: 200px;
+		height: 270px;
 		text-align: center;
 		border-radius: 20px;
+	}
+	
+	.me
+	{
+		text-align: left;
 	}

@@ -20,6 +20,9 @@ var ichibanProjText = "百萬智多星 (Android/iOS)";
 var beyondProjText = "地球計畫 (Android/iOS/Steam/Switch/MacOS)";
 var heavenProjText = "靈魂之橋 (Android/iOS/Steam/Switch/MacOS)";
 
+var igsQuitText = "不想再做博弈類遊戲，離職與前同事到前主管開的新遊戲公司"
+var maxonQuitText = "專案取消，全體資遣"
+var sigonoQuitText = "專案告一段落，公司的遊戲類型與興趣不合"
 
 var gitgraph = new GitGraph({
   template: "metro",
@@ -35,11 +38,11 @@ var igsJobBranch = experienceBranch.branch( igsBranchText );
 igsJobBranch.commit( sdkProjText ).commit( mjProjText );
 experienceBranch.commit( igsText2 );
 experienceBranch.commit( igsText3 );
-igsJobBranch.merge( experienceBranch );
+igsJobBranch.merge( experienceBranch, igsQuitText );
 experienceBranch.commit( maxonText );
 var maxonJobBranch = experienceBranch.branch( maxonBranchText );
 maxonJobBranch.commit( vegaProjText ).commit( galileeProjText ).commit( ichibanProjText );
-maxonJobBranch.merge( experienceBranch );
+maxonJobBranch.merge( experienceBranch, maxonQuitText );
 var sigonoJobBranch = experienceBranch.branch( sigonoBranchText );
 sigonoJobBranch.commit( beyondProjText ).commit( heavenProjText );
-sigonoJobBranch.merge( experienceBranch );
+sigonoJobBranch.merge( experienceBranch, sigonoQuitText );

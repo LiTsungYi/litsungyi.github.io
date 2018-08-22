@@ -573,10 +573,15 @@
 	.project
 	{
 		margin: 10px;
-		width: 200px;
-		height: 270px;
+		width: 300px;
+		height: 350px;
 		text-align: center;
 		border-radius: 20px;
+	}
+
+	.project-group
+	{
+		clear: both;
 	}
 	
 	.me

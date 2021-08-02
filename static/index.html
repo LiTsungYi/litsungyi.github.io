@@ -50,15 +50,17 @@
   <div class="container">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-dark text-decoration-none">
-        <span class="fs-4">TsungYi Li</span>
+        <img src="images/Profile.jpg" alt="mdo" width="32" height="32" class="rounded-circle">
+        <span>&nbsp;</span>
+        <span class="fs-4">Li Tsung-Yi</span>
       </a>
 
       <ul class="nav nav-pills">
         <li class="nav-item">
-          <a href="#" class="nav-link active" aria-current="page"><i class="fas fa-home"></i> Home</a>
+          <a href="/" class="nav-link active" aria-current="page"><i class="fas fa-home"></i> Home</a>
         </li>
         <li class="nav-item">
-          <a href="https://tsungyi.li/Blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
+          <a target="_blank" href="https://tsungyi.li/Blog" class="nav-link"><i class="fas fa-blog"></i> Blog</a>
         </li>
         <!--
         <li class="nav-item">
@@ -66,16 +68,26 @@
         </li>
         -->
         <li class="nav-item">
-          <a href="https://https://github.com/litsungyi" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
+          <a target="_blank" href="https://github.com/litsungyi" class="nav-link"><i class="fab fa-github"></i> GitHub</a>
         </li>
         <li class="nav-item">
-          <a href="https://www.facebook.com/litsungyi" class="nav-link"><i class="fab fa-facebook"></i> Facebook</a>
+          <a target="_blank" href="https://www.facebook.com/litsungyi" class="nav-link"><i class="fab fa-facebook"></i> Facebook</a>
+        </li>
+        <li class="nav-item">
+          <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class="nav-link"><i class="fab fa-linkedin"></i> LinkedIn</a>
         </li>
         <!--
         <li class="nav-item">
           <a href="about.html" class="nav-link"><i class="fas fa-info"></i> About</a>
         </li>
         -->
+        <li class="nav-item">
+          <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+            <input type="hidden" name="cmd" value="_s-xclick">
+            <input type="hidden" name="hosted_button_id" value="6SAKXE9TESAXE">
+            <button class="donate" onclick="javascript:submit()"><i class="fab fa-paypal"></i> Donate</button>
+          </form>
+        </li>
       </ul>
     </header>
   </div>
@@ -88,8 +100,27 @@
   
   <div class="b-example-divider"></div>
 
+  <div class="container px-4 py-5">
+    <p class="fs-3">
+      Hi, I am Li Tsung-Yi (李宗沂).
+    </p>
+    <p class="fs-4">
+      I am a game developer from 🇹🇼 Taiwan.
+      <br/>
+      You can contact me via 
+      <a target="_blank" href="https://www.facebook.com/litsungyi" class=""><i class="fab fa-facebook"></i> Facebook</a> or
+      <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class=""><i class="fab fa-linkedin"></i> LinkedIn</a>.
+      <br/>
+      Or visit my 
+      <a target="_blank" href="https://tsungyi.li/Blog" class=""><i class="fas fa-blog"></i> Blog</a> or 
+      <a target="_blank" href="https://github.com/litsungyi" class=""><i class="fab fa-github"></i> GitHub</a>.
+      <br/>
+      If you enjoy my work, you can <i class="fab fa-paypal"></i> buy me a coffee ☕.
+    </p>
+  </div>
+
   <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Blog ang Sourcecode...</h2>
+    <h2 class="pb-2 border-bottom">Blogs</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
@@ -98,9 +129,10 @@
         <div>
           <h2>Blog</h2>
           <p>一些關於 C++ 以及 Unity / C# 相關的開發文章</p>
-          <a target="_new" href="https://tsungyi.li/Blog" class="btn btn-primary">Github Page</a>
+          <a target="_blank" href="https://tsungyi.li/Blog" class="btn btn-primary">Blog</a>
         </div>
       </div>
+
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
           <span style="font-size: 3rem;"><i class="fab fa-wordpress"></i></span>
@@ -108,9 +140,26 @@
         <div>
           <h2>WordPress</h2>
           <p>一些關於 Unity / C# 相關的開發文章 （舊的部落格文章，將會轉移到 Github Page）</p>
-          <a target="_new" href="https://litsungyi.wordpress.com/" class="btn btn-primary">WordPress</a>
+          <a target="_blank" href="https://litsungyi.wordpress.com/" class="btn btn-primary">WordPress</a>
         </div>
       </div>
+
+      <!--
+      <div class="col d-flex align-items-start">
+        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+          <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
+        </div>
+        <div>
+          <h2></h2>
+          <p>...</p>
+          <a target="_blank" href="" class="btn btn-primary">Link</a>
+        </div>
+      </div>
+      -->
+    </div>
+
+    <h2 class="pb-2 border-bottom">Games and Programming</h2>
+    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
           <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
@@ -118,11 +167,10 @@
         <div>
           <h2>GitHub</h2>
           <p>一些製作的小工具、Game Jam、Unity 測試、遊戲修改器...</p>
-          <a target="_new" href="https://github.com/litsungyi" class="btn btn-primary">GitHub</a>
+          <a target="_blank" href="https://github.com/litsungyi" class="btn btn-primary">GitHub</a>
         </div>
       </div>
-    </div>
-    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
           <span style="font-size: 3rem;"><i class="fas fa-gamepad"></i></span>
@@ -130,31 +178,20 @@
         <div>
           <h2>Global Game Jam</h2>
           <p>一些我參加過的 Game Jam 作品</p>
-          <a target="_new" href="https://globalgamejam.org/users/litsungyi" class="btn btn-primary">Global Game Jam</a>
+          <a target="_blank" href="https://globalgamejam.org/users/litsungyi" class="btn btn-primary">Global Game Jam</a>
         </div>
       </div>
-      <!--
+
       <div class="col d-flex align-items-start">
         <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-          <span style="font-size: 3rem;"><i class="fab fa-wordpress"></i></span>
+          <span style="font-size: 3rem;"><i class="fas fa-dice"></i></span>
         </div>
         <div>
-          <h2></h2>
-          <p>...</p>
-          <a target="_new" href="" class="btn btn-primary">Link</a>
+          <h2>BoardgameGeek</h2>
+          <p>我的桌遊收藏</p>
+          <a target="_blank" href="https://boardgamegeek.com/user/litsungyi" class="btn btn-primary">BoardgameGeek</a>
         </div>
       </div>
-      <div class="col d-flex align-items-start">
-        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-          <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
-        </div>
-        <div>
-          <h2></h2>
-          <p>...</p>
-          <a target="_new" href="" class="btn btn-primary">Link</a>
-        </div>
-      </div>
-      -->
     </div>
 
     <h2 class="pb-2 border-bottom">Contact Me</h2>
@@ -166,7 +203,7 @@
         <div>
           <h2>Facebook</h2>
           <p>我的 Facebook 頁面，想要跟我聯絡可以到這裡...</p>
-          <a target="_new" href="https://www.facebook.com/litsungyi" class="btn btn-primary">Facebook</a>
+          <a target="_blank" href="https://www.facebook.com/litsungyi" class="btn btn-primary">Facebook</a>
         </div>
       </div>
 
@@ -177,24 +214,27 @@
         <div>
           <h2>LinkedIn</h2>
           <p>我的 LinkedIn 頁面，工作上的聯繫請透過這裡...</p>
-          <a target="_new" href="https://www.linkedin.com/in/litsungyi" class="btn btn-primary">LinkedIn</a>
-        </div>
-      </div>
-
-      <div class="col d-flex align-items-start">
-        <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
-          <span style="font-size: 3rem;"><i class="fas fa-dice"></i></span>
-        </div>
-        <div>
-          <h2>BoardgameGeek</h2>
-          <p>我的桌遊收藏</p>
-          <a target="_new" href="https://boardgamegeek.com/user/litsungyi" class="btn btn-primary">BoardgameGeek</a>
+          <a target="_blank" href="https://www.linkedin.com/in/litsungyi" class="btn btn-primary">LinkedIn</a>
         </div>
       </div>
     </div>
+
+    <!--
+    <div class="col d-flex align-items-start">
+      <div class="icon-square bg-light text-dark flex-shrink-0 me-3">
+        <span style="font-size: 3rem;"><i class="fab fa-github"></i></span>
+      </div>
+      <div>
+        <h2></h2>
+        <p>...</p>
+        <a target="_blank" href="" class="btn btn-primary">Link</a>
+      </div>
+    </div>
+    -->
   </div>
 
 </main>
+
     <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

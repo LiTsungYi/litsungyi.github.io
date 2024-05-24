@@ -4,7 +4,8 @@
     <title>LiTsungYi&#39;s Home</title>
     <link>http://tsungyi.li/</link>
     <description>Recent content on LiTsungYi&#39;s Home</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us,zh-tw</language><atom:link href="http://tsungyi.li/index.xml" rel="self" type="application/rss+xml" />
+    <generator>Hugo</generator>
+    <language>en-us,zh-tw</language>
+    <atom:link href="http://tsungyi.li/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
